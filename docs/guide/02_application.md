@@ -6,17 +6,15 @@ The application class offers the following methods:
 
 Example usage:
 
-```JS
-greppy.app.dialog(
-  'Logout every user?',
-  {
-    ok: function(callback) {
-      logoutAllUsers();
-      callback && callback();
-    }
-  }
-);
-```
+    greppy.app.dialog(
+      'Logout every user?',
+      {
+        ok: function(callback) {
+          logoutAllUsers();
+          callback && callback();
+        }
+      }
+    );
 
 Here, we provide only two paramerters: The body of the modal and an option for
 the "ok"-button.
@@ -29,21 +27,19 @@ the modal internals work.
 We could also extend the second parameter to provide a function for the
 "cancel"-button:
 
-```JS
-greppy.app.dialog(
-  'Logout every user?',
-  {
-    ok: function(callback) {
-      logoutAllUsers();
-      callback && callback();
-    },
-    cancel: function(callback) {
-      goBack();
-      callback && callback();
-    }
-  }
-);
-```
+    greppy.app.dialog(
+      'Logout every user?',
+      {
+        ok: function(callback) {
+          logoutAllUsers();
+          callback && callback();
+        },
+        cancel: function(callback) {
+          goBack();
+          callback && callback();
+        }
+      }
+    );
 
 So now, if the user clicks "cancel", our "goBack"-method will be called.
 
