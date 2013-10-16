@@ -1,6 +1,6 @@
 # Controller
 
-The controller is currently only used to generate links.
+The `controller class` is currently only used to generate links.
 
 Simply pass an options object as an argument to it's constructor:
 

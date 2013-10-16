@@ -1,6 +1,6 @@
 # Application
 
-The application class offers the following methods:
+The `application class` offers the following methods:
 
 ## dialog(body, options, buttons)
 
