@@ -1,8 +1,10 @@
 # Application
 
-The `application class` offers the following methods:
+The `application class` is used for application-related functionality.
 
-## dialog(body, options, buttons)
+## Methods
+
+### dialog(body, options, buttons)
 
 Example usage:
 

@@ -2,7 +2,11 @@
 
 The `controller class` is currently only used to generate links.
 
-Simply pass an options object as an argument to it's constructor:
+## Methods
+
+### link(action. params)
+
+First, pass an options object as an argument to the constructor of the class:
 
     myController = new greppy.Controller({
         basePath: 'my/path/',

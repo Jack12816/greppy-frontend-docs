@@ -1,7 +1,7 @@
 # Structure
 
 The Greppy Frontend source is divided into multiple js-files and mostly follows
-the rule "one class per file"``
+the rule *one class per file*.
 
 * ``header.js`` Contains code, which will be executed *first*.
 
