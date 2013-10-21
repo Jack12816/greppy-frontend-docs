@@ -19,8 +19,6 @@ the rule *one class per file*.
 
     * ``sort.js`` Contains the sort class which handles sorting of the data-grid.
 
-* ``sanitizer.js`` Contains the sanitizer class. Allows sanitation of elements.
-
 * ``styler.js`` Contains the styler class. Allows easy styling of different elements.
 
 * ``footer.js`` Contains code, which will be executed *last*.
