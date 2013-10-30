@@ -3,7 +3,7 @@
 The Greppy Frontend source is divided into multiple js-files and mostly follows
 the rule *one class per file*.
 
-* ``header.js`` Contains code, which will be executed *first*.
+* ``header.js`` Contains code which will be executed *first*.
 
 * ``application.js`` Contains the application class. Allows easy modal handling.
 
@@ -21,6 +21,8 @@ the rule *one class per file*.
 
 * ``styler.js`` Contains the styler class. Allows easy styling of different elements.
 
-* ``footer.js`` Contains code, which will be executed *last*.
+* ``validator.js`` Contains the validator class. Allows better HTML5 validation for bootstrap elements.
+
+* ``footer.js`` Contains code which will be executed *last*.
 
 The files are concatenated into one .js (and .min.js respectively) on building.
