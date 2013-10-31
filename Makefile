@@ -25,15 +25,18 @@ all: docs
 docs: clean docs-md docs-api
 
 docs-md:
+	@mkdir -p build
 	$(call md2html,"guide")
 	$(call md2html,"examples")
 
 docs-api:
+	@mkdir -p build
 	$(call print,"Generate documentation")
 	@./node_modules/.bin/jsdoc -c ./jsdoc.conf.json ./node_modules/greppy-frontend/js ./node_modules/greppy-frontend/README.md
 
 clean:
 	$(call print,"Cleanup documentation files")
+	@mkdir -p build
 	@rm -f ./build/*.html*
 	@rm -f ./build/chaper_*.md
 
