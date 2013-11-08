@@ -1,6 +1,6 @@
 # Application
 
-The `application class` is used for application-related functionality.
+The ``application class`` is used for application-related functionality.
 
 ## Methods
 
@@ -18,16 +18,16 @@ Example usage:
       }
     );
 
-Here, we provide only two paramerters: The body of the modal and an option for
-the "ok"-button.
+Here, we provide only two parameters: The body of the modal and an option for
+the ``ok``-button.
 
-This basically says: If the user clicks the "ok"-button, call the function
+This basically says: If the user clicks the ``ok``-button, call the function
 we provided. The provided function's main purpose is to call the
-"logoutAllUsers" function. But we also need to take and call the callback, so
+``logoutAllUsers`` function. But we also need to take and call the callback, so
 the modal internals work.
 
 We could also extend the second parameter to provide a function for the
-"cancel"-button:
+``cancel``-button:
 
     greppy.app.dialog(
       'Logout every user?',
@@ -43,6 +43,6 @@ We could also extend the second parameter to provide a function for the
       }
     );
 
-So now, if the user clicks "cancel", our "goBack"-method will be called.
+So now, if the user clicks ``cancel``, our ``goBack``-function will be called.
 
 

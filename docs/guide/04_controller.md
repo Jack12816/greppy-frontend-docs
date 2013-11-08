@@ -1,6 +1,6 @@
 # Controller
 
-The `controller class` is currently only used to generate links.
+The ``controller class`` is currently only used to generate links.
 
 ## Methods
 
@@ -17,7 +17,7 @@ First, pass an options object as an argument to the constructor of the class:
         }
     });
 
-Now you can generate links with the `link()` method:
+Now you can generate links with the ``link()`` method:
 
     var link = myController.link('restore', {id: 23});
 
@@ -27,5 +27,5 @@ is an object containing the desired parameters for our generated url.
 The method will automatically recognize the parameter(s) in the path and replace
 them with the passed values.
 
-So in our case, `link()` would equal: `my/path/show/23`
+So in our case, ``link()`` would equal: ``my/path/show/23``
 

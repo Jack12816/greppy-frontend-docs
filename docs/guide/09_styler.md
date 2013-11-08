@@ -1,14 +1,14 @@
 # Styler
 
-The `styler class` offers easy to use methods for enhancing the ui.
+The ``styler class`` offers easy to use methods for enhancing the ui.
 
 ## Methods
 
-### styleUpload(elem)
+### styleUpload(el)
 
 Since Twitters' Bootstrap doesn't offer a possibility to style file-uploads,
 greppy offers a method which fills this gap.
-`elem` is the only required parameter. It's the input element, which should be
+``el`` is the only required parameter. It's the input element, which should be
 styled.
 
 Nice to know: You can't really style upload elements. All that's happening
@@ -16,17 +16,20 @@ internally is, that we create a pseudo upload element and hide the actual one.
 Then some event bindings are done and the user only interacts with the dummy
 element (which accesses the original upload internally).
 
-### styleNumber(elem)
+### styleNumber(el)
 
 While HTML5 offers the possibility to define inputs of type number, modern
 browsers don't handle these inputs in a similar way: Chrome and Opera offer
 a spinner, but Firefox for example doesn't. That's why we came up with the
-styleNumber-method. Simply pass in an input element as the parameter `elem`
+styleNumber-method. Simply pass in an input element as the parameter ``el``
 (preferably type="text") and greppy will add a plus and a minus button next to
 the input, which controls it's content.
 
-You can use the attributes `data-min` and `data-max` to define the minimum and
+You can use the attributes ``data-min`` and ``data-max`` to define the minimum and
 maximum allowed value for the input (the spinner will stop then).
+
+Tip: It's also possible to pass a jQuery object with multiple inputs if all
+of them should get a spinner.
 
 ### initOverlay(el, showEvent, removeEvent)
 
@@ -37,15 +40,15 @@ in it.
 
 Parameters:
 
-  * `el`: The element which should be covered by the overlay
-  * `showEvent` The event which triggers the overlay to be shown
-  * `removeEvent` The event which triggers the overlay to be removed
+  * ``el``: The element which should be covered by the overlay
+  * ``showEvent`` The event which triggers the overlay to be shown
+  * ``removeEvent`` The event which triggers the overlay to be removed
 
-### validateStyleUpload(elem)
+### validateStyleUpload(el)
 
 Only used internally.
 
-### validateStyleNumber(elem)
+### validateStyleNumber(el)
 
 Only used internally.
 
@@ -57,14 +60,14 @@ Only used internally.
 
 ### Styling an upload
 
-Styling an upload is done by calling the `styleUpload` method on a greppy styler
+Styling an upload is done by calling the ``styleUpload`` method on a greppy styler
 instance and passing the input element as parameter:
 
     var g = new greppy.Styler();
 
     g.styleUpload($('#myFileInput'));
 
-These are all necessary steps to style the input with the id `#myFileInput`.
+These are all necessary steps to style the input with the id ``myFileInput``.
 
 ### Styling a number
 
@@ -73,6 +76,6 @@ A number can be styled in a similar way:
     var s = new greppy.Styler();
     s.styleNumber($('#myNumInput'));
 
-The result is, that our input with the id `#myFileInput` now has a spinner
+The result is, that our input with the id ``myFileInput`` now has a spinner
 attached to it.
 

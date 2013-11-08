@@ -1,7 +1,7 @@
 # Search (Data-Grid)
 
-The `search class` is meant to be used in conjunction with the
-`data-grid class`. In fact, it will be instantiated by the data-grid class
+The ``search class`` is meant to be used in conjunction with the
+``data-grid class``. In fact, it will be instantiated by the data-grid class
 most of the time.
 
 ## Methods
@@ -22,4 +22,4 @@ Only used in internals. Returns an array of objects with relevant parameters
 
 ## Examples
 
-None at this time. Please refer to `data-grid`.
+None at this time. Please refer to ``data-grid``.

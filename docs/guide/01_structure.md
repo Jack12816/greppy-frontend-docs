@@ -15,7 +15,7 @@ the rule *one class per file*.
 
     * ``pagination.js`` Contains the paginator class which allows paginating of the data-grid.
 
-    * ``search.js`` Contains the search class which handles search operstions of the data-grid.
+    * ``search.js`` Contains the search class which handles search operations of the data-grid.
 
     * ``sort.js`` Contains the sort class which handles sorting of the data-grid.
 

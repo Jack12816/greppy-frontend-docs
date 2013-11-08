@@ -1,6 +1,6 @@
 # Data-Grid
 
-The `data-grid class` is responsible for the core data-grid functionality.
+The ``data-grid class`` is responsible for the core data-grid functionality.
 
 It's constructor instantiates some other relevant data-grid classes:
 
@@ -19,15 +19,15 @@ The following methods are offered by the data-grid class:
 This method is used to trigger loading of the data-grid. The parameters are all
 optional and allow defining custom settings for rebuilding.
 
-By default, the first two parameters, `rows` and `pagination` are true, which
+By default, the first two parameters, ``rows`` and ``pagination``, are true which
 means that the rows and the pagination will be updated.
 
-The third parameter, `page`, can be used to define a custom page which should be
+The third parameter, ``page``, can be used to define a custom page which should be
 loaded. Providing it is only needed, if you don't want the data-grid to handle
 the current page.
 
 If you'd want to update only the pagination (and not the rows), you could simply
-pass a `false` as the first argument:
+pass a ``false`` as the first argument:
 
     load(false);
 

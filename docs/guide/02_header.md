@@ -7,7 +7,7 @@ contents will be placed first.
 
 ## Examples
 
-Currently, the global `greppy` is being defined in the header:
+Currently, the global ``greppy`` is being defined in the header:
 
     var greppy = {};
 
