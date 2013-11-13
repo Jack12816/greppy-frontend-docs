@@ -15,8 +15,11 @@ Greppy will then show a red box with an error message, if the validation fails.
 
 Attributes help you customizing the behavior of validators. They are optional.
 
-* ``data-greppy-validator-msg`` If added, it needs to be placed directly to the
-validated element. You can define a message for a failing validation here.
+* ``data-greppy-validator-msg`` You can define a message for a failing validation here.
+If added, it needs to be placed either to the element which has the
+``data-greppy-validator-mark``-attribute (preferred for radio buttons) or
+directly to the validated element.
+
 
 * ``data-greppy-validator-mark`` Defines the element which is marked on failed
 validation and under which the validation message is placed. The value must be
@@ -70,21 +73,13 @@ Use it if you need to know, what will be marked on validation.
 ## More methods (these are used mainly internally)
 
 ### isUniqueValidator(el)
-
 ### getUniqueValidator(el)
-
 ### getUniqueValidators(allValidators)
-
 ### validate(el)
-
 ### markInvalid(el)
-
 ### removeInvalidMark(el)
-
 ### showMsg(el)
-
 ### hasActiveMsg(el)
-
 ### removeMsg(el)
 
 ## Events

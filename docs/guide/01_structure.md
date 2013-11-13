@@ -21,6 +21,12 @@ the rule *one class per file*.
 
 * ``styler.js`` Contains the styler class. Allows easy styling of different elements.
 
+* ``styler/``
+
+    * ``number.js`` Contains the number-styler. Allows adding a number spinner to inputs.
+
+    * ``upload.js`` Contains the upload-styler. Allows "styling" an upload to look like BS3.
+
 * ``validator.js`` Contains the validator class. Allows better HTML5 validation for bootstrap elements.
 
 * ``footer.js`` Contains code which will be executed *last*.
